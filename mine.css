@@ -216,6 +216,7 @@ header .links .loging_signup a {
 }
 .cart.active {
     right: 0;
+    overflow-y: auto;
 }
 
 .cart .top-cart {
