@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toppco</title>
+    <link rel="stylesheet" href="mine.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="login_regs.css">
+</head>
+<body>
+    <header>
+        <div class="container top-nav">
+            <a href="index.html" class="logo"><img src="img/logo-black.png" alt=""></a>
+            <form action="" class="search">
+                <input type="search" placeholder="sarch for produts...">
+                <button type="submit">search</button>
+            </form>
+
+            <div class="cart_header">
+                <div onclick="open_cart()" class="icon_cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="conunt_item">0</span>
+                </div>
+                <div class="tottal-price">
+                    <p>My cart:</p>
+                    <p class="price_cart_head">$</p>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <div class="links container">
+                <i  onclick="open_menu()" class="fa-solid fa-bars but_open_menu"></i>
+                <ul id="menu">
+                    <span onclick="close_menu()" class="header_over"></span>
+
+                    <i onclick="close_menu()" class="fa-solid fa-circle-xmark but_close_menu"></i>
+                    <img src="img/logo-black.png" class="logo_menu" alt="">
+
+                    <li ><a href="index.html">home</a></li>
+                    <li><a href="all_product.html">all products</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                <div class="loging_signup">
+                    <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart">
+        <div class="top-cart">
+            <h3>My cart <span class="count_item_cart">(0Item in cart)</span></h3>
+            <span class="close-cart"><i class="fa-solid fa-circle-xmark" onclick="close_cart()"></i></span>
+        </div>
+
+        <div class="items_in_cart">
+            
+        </div>
+
+        <div class="buttom-cart">
+            <div class="total">
+                <p>cart subtotal</p>
+                <p class="pric_cart_total">0$</p>
+            </div>
+
+            <div class="buttom-cart">
+                <a href="checkout.html"class ="btn-cart">proceed to checkout</a>
+                <button onclick="close_cart()" class="btn-cart trans-bg">shop more</button>
+            </div>
+        </div>
+    </div>
+
+<section class="sigin sec_form">
+    <div class="form_container">
+        <p class="tital">welcome back</p>
+
+        <form action="" class="form">
+
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="password">
+            <input type="password" placeholder="password">
+
+
+            <button class="form-btn">
+              sign up
+            </button>
+
+        </form>
+
+        <p class="sign-up-label">
+             have an Account? <a href="#" class="sign-up-link">login</a>
+        </p>
+
+
+        <div class="buttons-container">
+
+            <div class="apple-login-buuton">
+                <i class="fa-brands fa-apple"></i>
+                <span>sign up with apple</span>
+            </div>
+
+            <div class="google-login-buuton">
+                <i class="fa-brands fa-google"></i>
+                <span>sign up  with apple</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<div class="back_to_top">
+    <p>back to top</p>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="big_row">
+            <img src="img/logo-white.png" alt="">
+            <div class="hotline">
+                <i class="fa-solid fa-headset"></i>
+
+                <div class="text">
+                    <h5>hotine free 24/24</h5>
+                    <h6>(+100) 123 453 7890</h6>
+                </div>
+            </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </div>
+
+        <div class="row">
+            <h4>FAQs & help</h4> 
+
+            <div class="links">
+            <a href="#">F.A.Q.S</a>
+            <a href="#">Ordering Tracking</a>
+            <a href="#">contacts</a>
+            <a href="#">Events</a>
+            <a href="#">Help Center</a>
+        </div>
+        </div>
+
+        <div class="row">
+            <h4>Shopping & Delivery</h4> 
+
+            <div class="links">
+            <a href="#">delivery Informtion</a>
+            <a href="#">Discount</a>
+            <a href="#">payment & Shopping</a>
+            <a href="#">Estimatad Delivery time </a>
+            <a href="#">Shopping Guide</a>
+        </div>
+        </div>
+        <div class="row">
+            <h4>Informatoin</h4> 
+
+            <div class="links">
+            <a href="#">Poqular</a>
+            <a href="#">Our Services</a>
+            <a href="#">Your Account</a>
+            <a href="#">privacy policy</a>
+            <a href="#">Terms & Condition</a>
+        </div>
+        </div>
+    </div>
+
+    <div class="bottom_footer">
+        <div class="container">
+            <p>copyright &copy; <span>Topico.</span>all rights reserved</p>
+            <div class="payment_img">
+                <img src="img/payment-1.png" alt="">
+                <img src="img/payment-2.png" alt="">
+                <img src="img/payment-3.png" alt="">
+                <img src="img/payment-4.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+
+<!-- Initialize Swiper -->
+<script src="js/app.js"></script>
+
+
+</body>
+</html>

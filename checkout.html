@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toppco</title>
+    <link rel="stylesheet" href="mine.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <div class="container top-nav">
+            <a href="index.html" class="logo"><img src="img/logo-black.png" alt=""></a>
+            <form action="" class="search">
+                <input type="search" placeholder="sarch for produts...">
+                <button type="submit">search</button>
+            </form>
+
+            <div class="cart_header">
+                <div onclick="open_cart()" class="icon_cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="conunt_item">0</span>
+                </div>
+                <div class="tottal-price">
+                    <p>My cart:</p>
+                    <p class="price_cart_head">$</p>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <div class="links container">
+                <i  onclick="open_menu()" class="fa-solid fa-bars but_open_menu"></i>
+                <ul id="menu">
+                    <span onclick="close_menu()" class="header_over"></span>
+
+                    <i onclick="close_menu()" class="fa-solid fa-circle-xmark but_close_menu"></i>
+                    <img src="img/logo-black.png" class="logo_menu" alt="">
+
+                    <li ><a href="index.html">home</a></li>
+                    <li><a href="all_product.html">all products</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                <div class="loging_signup">
+                    <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="sigup-pag.html"><i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart">
+        <div class="top-cart">
+            <h3>My cart <span class="count_item_cart">(0Item in cart)</span></h3>
+            <span class="close-cart"><i class="fa-solid fa-circle-xmark" onclick="close_cart()"></i></span>
+        </div>
+
+        <div class="items_in_cart">
+            
+        </div>
+
+        <div class="buttom-cart">
+            <div class="total">
+                <p>cart subtotal</p>
+                <p class="pric_cart_total">0$</p>
+            </div>
+
+            <div class="buttom-cart">
+                <a href="checkout.html"class ="btn-cart">proceed to checkout</a>
+                <button onclick="close_cart()" class="btn-cart trans-bg">shop more</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="checkout">
+        <div class="container">
+            <form action="">
+                <div class="address">
+                    <h1>Delivery Address</h1>
+
+                  <div class="inputs">
+                    <label for="">email</label>
+                    <input type="email" placeholder="enter yuor email">
+
+                    <label for="" >name</label>
+                    <input type="text" placeholder="enter yuor name">
+
+                    <label for="" >address</label>
+                    <input type="text" placeholder="enter yuor address">
+
+                    <label for="" >phone</label>
+                    <input type="number" placeholder="enter yuor phon">
+                </div>
+                </div>
+                <div class="coupon">
+                    <h1>coupon code</h1>
+                    <div class="inputs">
+                        <label for="">coupon code</label>
+                        <input type="text">
+                    </div>
+                </div>
+            </form>
+
+            <div class="ordersummary">
+                <h1>order summary</h1>
+
+                <div class="items">
+                    <div class="item_cart">
+                        <img src="img/product/product-1.jpg" alt="">
+
+                        <div class="content">
+                            <h4>
+                                orinal mobile android dual sim samar phone g3
+                            </h4>
+                            <p class="pric_cart">price : <span>$140</span></p>
+                        </div>
+                    </div>
+
+                    <div class="item_cart">
+                        <img src="img/product/product4.jpg" alt="">
+
+                        <div class="content">
+                            <h4>
+                                orinal mobile android dual sim samar phone g3
+                            </h4>
+                            <p class="pric_cart">price : <span>$140</span></p>
+                        </div>
+                    </div>
+
+                    <div class="total">
+                        <P>total</P>
+                        <span>$125.00</span>
+                    </div>
+
+                    <div class="button_div">
+                        <button>place order</button>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="back_to_top">
+    <p>back to top</p>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="big_row">
+            <img src="img/logo-white.png" alt="">
+            <div class="hotline">
+                <i class="fa-solid fa-headset"></i>
+
+                <div class="text">
+                    <h5>hotine free 24/24</h5>
+                    <h6>(+100) 123 453 7890</h6>
+                </div>
+            </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </div>
+
+        <div class="row">
+            <h4>FAQs & help</h4> 
+
+            <div class="links">
+            <a href="#">F.A.Q.S</a>
+            <a href="#">Ordering Tracking</a>
+            <a href="#">contacts</a>
+            <a href="#">Events</a>
+            <a href="#">Help Center</a>
+        </div>
+        </div>
+
+        <div class="row">
+            <h4>Shopping & Delivery</h4> 
+
+            <div class="links">
+            <a href="#">delivery Informtion</a>
+            <a href="#">Discount</a>
+            <a href="#">payment & Shopping</a>
+            <a href="#">Estimatad Delivery time </a>
+            <a href="#">Shopping Guide</a>
+        </div>
+        </div>
+        <div class="row">
+            <h4>Informatoin</h4> 
+
+            <div class="links">
+            <a href="#">Poqular</a>
+            <a href="#">Our Services</a>
+            <a href="#">Your Account</a>
+            <a href="#">privacy policy</a>
+            <a href="#">Terms & Condition</a>
+        </div>
+        </div>
+    </div>
+
+    <div class="bottom_footer">
+        <div class="container">
+            <p>copyright &copy; <span>Topico.</span>all rights reserved</p>
+            <div class="payment_img">
+                <img src="img/payment-1.png" alt="">
+                <img src="img/payment-2.png" alt="">
+                <img src="img/payment-3.png" alt="">
+                <img src="img/payment-4.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+
+<!-- Initialize Swiper -->
+<script src="js/app.js"></script>
+
+
+</body>
+</html>
